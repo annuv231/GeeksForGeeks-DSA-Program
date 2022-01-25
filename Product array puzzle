@@ -1,0 +1,27 @@
+Ques: https://practice.geeksforgeeks.org/problems/product-array-puzzle/0
+
+
+ {
+	//code
+	int i,j;
+	int t;
+	cin>>t;
+	for(i=0;i<t;i++)
+	{
+	    int n;
+	    cin>>n;
+	    int p=1;
+	    int a[n];
+	    for(j=0;j<n;j++)
+	    {
+	        cin>>a[j];
+	        p=p*a[j];
+	    }
+	    for(j=0;j<n;j++)
+	    {
+	        cout<<p/a[j]<<" ";
+	    }
+	    cout<<"\n";
+	}
+	return 0;
+}
